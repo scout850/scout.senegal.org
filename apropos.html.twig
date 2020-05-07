@@ -1,0 +1,441 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<title>{% block title %}Présentation-Scoutisme au Sénégal{% endblock %}</title>
+
+<style>
+body {
+background-color:LightgoldenrodYellow;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+</style>
+
+<section class="my-5">
+
+ <!-- Section heading -->
+<h2 class="h1-responsive font-weight-bold text-center my-5">Nous allons vous présenter le mouvement scout</h2>
+<!-- Section description -->
+<h1 align=center>Historique</h1>
+<p class="text-center dark-grey-text w-responsive mx-auto mb-5">Le Mouvement Scouts du Sénégal indépendant voit
+le jour lors de la Conférence Inter-États à Cotonou<br /> le 19 avril 1960 qui décide "que les Provinces (par États)
+créés par la Charte D'Abidjan deviennent désormais <br />des Associations Nationales avec leurs statuts propres".
+Les anciens Districts deviennent alors des Régions; le terme Province est supprimé.<br /> l'emploi du système 
+de patrouille, la pratique du jeu et de la vie dans la nature.<br />Les Scouts du Sénégal font partie de :l'Association 
+des scouts et guides du Sénégal, <br />la Confédération sénégalaise du scoutismel'Organisation mondiale du mouvement scout (OMMS)
+<br />la Conférence Internationale Catholique du scoutisme (CICS) Chaque année, un pèlerinage national est organisé à Popenguine.</p>
+<h2 align=center>Objectifs</h2>
+<p class="text-center dark-grey-text w-responsive mx-auto mb-5">Le mouvement Scouts comporte 5 grands objectifs qui sont :
+<br /><STRONG>La santé </STRONG><br />En reprenant l’adage « un esprit sain dans un corps sain« , le louvetisme prend part à la santé 
+de l’enfant par des activités en pleine air,<br /> par du sport.Le sport n’est pas un but en soi, c’est un moyen utilisé pour jouer
+et se dépenser ensemble.<br />La santé passe aussi par l’apprentissage de l’hygiène en camp. Se laver pendant le camp,<br /> se laver les 
+mains et faire attention à la nourriture lorsque l’on prépare la cuisine, lorsque l’on mange,… Bref, <br />apprendre à vivre de façon saine,
+comme à la maison, mais sans que cela soit demandé par les parents. Il faut que l’initiative vienne du louveteau.<br />
+<br /><STRONG> La Formation du Caractère </STRONG><br />Le caractère… Une « qualité » que beaucoup ont ! Trop ou pas assez, cela dépend… Nous 
+voulons des enfants qui aient du caractère, certes,<br /> mais dans le bon sens du terme, c’est à dire qu’ils aient la volonté d’avancer, d’aller 
+de l’avant, <br />de savoir ce qu’ils veulent afin de discerner le bien du mal.Les louveteaux ont pour devise : « de Notre Mieux ».<br /> C’est-à-dire 
+qu’ils vont mettre leurs qualités au service de leur progression personnelle,<br /> mais aussi au service de la meute afin d’avancer avec les autres.
+Lors des sorties de meute, des veillées, ou encore lors du Rocher du Conseil,<br /> l’enfant va devoir apprendre à s’exprimer, à donner son avis.
+Le but est que l’enfant soit aussi acteur de son développement, aidé d’Akela et de ses parents.<br />
+<br /><STRONG>Le Sens du Concret </STRONG><br /><I>« Montre- moi ta joie en actes » St Jacques, 2, 14.</I><br /> C’est l’acquisition d’une certaine
+habileté manuelle et de techniques à travers l’apprentissage du sémaphore, des nœuds, des installations…<br /><STRONG>Le sémaphore</STRONG> permet de travailler
+son équilibre, sa patience et son sens de l’observation.<br /><STRONG> Les installations</STRONG> vont permettre au louveteau de créer un espace de vie pour le camp.<br />
+Il ne s’agit pas juste de constructions en bois, mais de table sur laquelle la meute mange, de vaisselier qui permet de nettoyer la vaisselle, de coin cuisine…<br />Votre enfant
+est unique. Mais il vit en société, en meute. Il faut donc qu’il vive avec les autres, qu’il avance avec eux, qu’il apprenne à les connaitre, à les apprécier.<br />
+<br /><STRONG>Le Sens des autres</STRONG><br />Votre enfant est unique. Mais il vit en société, en meute. Il faut donc qu’il vive avec les autres, qu’il avance avec eux,
+qu’il apprenne à les connaitre, <br />à les apprécier.Il existe un bon moyen donné au loup pour ne pas l’oublier : la BA. Cette BA est quotidienne, gratuite bien sûr et a pour 
+simple but d’aider les autres.<br /> Quand nous associons le sens des autres avec notre devise « de notre mieux », nous mettons à cœur de rendre service en y mettant le meilleur
+de nous-mêmes, <br />quitte à demander de l’aide lorsqu’on ne sait pas.Je ne vais pas faire la liste des BA possibles, ni de comment les appliquer, mais le sens des autres est le
+fondement de la famille heureuse.<br />
+<br /><STRONG>Le Sens de Dieu</STRONG><br />Baden Powell ne concevait pas l’éducation sans parler de religion. Ses idées ont traversé la Manche et un prêtre, le Père Sevin,<br />
+a donné une dimension catholique au mouvement.Nous ne faisons pas de retraite, ni de journée de méditation,<br /> mais nous mettons Dieu au cœur de nos activités,
+par une prière au début et à la fin de chaque sortie, par la messe, par des jeux spirituels.<br />Nous apprenons aux enfants à découvrir la foi qui nous porte.</p>
+<h2 align=center>Siège social</h2>
+<p class="text-center dark-grey-text w-responsive mx-auto mb-5">Le siege social se trouve à <STRONG> Dakar Plateau Rue 49 Avenue de Place</STRONG><br />Tel : 77 287 66 41</p>
+
+    
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Scout au<span> Sénégal </span></h3>
+
+				<p class="footer-links">
+					<a href="{{ path('accueil') }}">Accueil</a>
+					·
+					<a href="{{ path('apropos') }}">Apropos</a>
+					·
+					<a href="{{ path('activite') }}">Activite</a>
+					·
+					<a href="{{ path('contact') }}">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Copyright Khalifa &copy; 2020</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>21 Angle Blaise Diagne</span> Dakar, Sénégal</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p> 33 860 09 55</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">scout-info@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>Heures et jours d'ouvertures</span>
+					Lundi au Vendredi 8h à 17h 
+                   </p>
+
+			</div>
+
+		</footer>
+
+{% endblock %} 
